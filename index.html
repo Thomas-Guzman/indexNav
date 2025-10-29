@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cali Wood</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      /* Estilos del carrusel: tamaño máximo, recorte y aspecto agradable */
+      #carruselCali { max-width: 720px; }
+      #carruselCali .carousel-inner { border-radius: .5rem; overflow: hidden; }
+      #carruselCali .carousel-item img { height: 420px; width: 100%; object-fit: cover; }
+      @media (max-width: 576px) { #carruselCali .carousel-item img { height: 220px; } }
+      /* Indicadores personalizados */
+      .carousel-indicators [data-bs-target] { background-color: rgba(255,255,255,0.8); }
+    </style>
+  </head>
+
+  <body>
+   
+    <div class="container my-4">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <img src="img/Cali.png" width="50" height="50" alt="Logo">
+          <a class="navbar-brand" href="#">Cali Wood</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Inici</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projectos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  
+      <h1 class="mt-5 text-center">A continuación veremos un poco de las cosas más hermosas que tenemos en Cali</h1>
+
+          
+      <div id="carruselCali" class="carousel slide carousel-fade mx-auto mt-4 shadow" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="hover">
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carruselCali" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carruselCali" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carruselCali" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/rata1.jpeg" class="d-block w-100" alt="Rata 1">
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h5>Rata 1</h5>
+              <p>Vista de la primer imagen destacada de Cali.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/rata2.jpg" class="d-block w-100" alt="Rata 2">
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h5>Rata 2</h5>
+              <p>Otra escena representativa.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/rata3.jpeg" class="d-block w-100" alt="Rata 3">
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h5>Rata 3</h5>
+              <p>Imágenes que muestran la diversidad local.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselCali" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselCali" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+
+    <main class="container my-5">
+      <div class="row g-4">
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/america.jpg" class="card-img-top" alt="Imagen 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">América de Cali</h5>
+              <p class="card-text">La mejor barra del mundo, solo pasión del pueblo 👹</p>
+              <a href="#" class="btn btn-primary">Más información</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/Empanadas.jpg" class="card-img-top" alt="Imagen 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">La gastronomía</h5>
+              <p class="card-text">En Cali contamos con empanadas únicas en sabor, orgullo de la sucursal del cielo.</p>
+              <a href="#" class="btn btn-primary">Más información</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/Festivalsalsa.jpg" class="card-img-top" alt="Imagen 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Festival Mundial de la Salsa</h5>
+              <p class="card-text">En Cali la salsa nos llena de orgullo y sabor.</p>
+              <a href="#" class="btn btn-primary">Más información</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <div class="container">
+        <p class="mb-1">&copy; 2025 Institut Barres i Ones.</p>
+        <p class="mb-0">
+          Contacto:
+          <a href="mailto:info@caliwood.com" class="text-white text-decoration-underline">info@caliwood.com</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- SCRIPT DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
